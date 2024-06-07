@@ -1,6 +1,6 @@
-# Frontend Template #
+# Weather App #
 
-A template for frontend projects
+A webapp that displays a 3-day weather forecast.
 
 ### Contact
-Question? Contact tnoel@novadynamics.com
+Question? Contact quaternioid "at" gmail "dot" com
