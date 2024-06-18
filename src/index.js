@@ -13,12 +13,18 @@ class Forecast {
   populateDay(id) {
     let day = document.getElementById(id);
 
-    // TODO Pick up here!
+    // TODO Pick up here too!
   }
 }
 
 (async () => {
-  let weather = new Weather();
+  let fcParams = {
+    place: 97370,
+    days: 3
+  };
 
-     
+  let weather = new Weather();
+  let forecast = new Forecast(weather.getForecast(fcParams));
+
+  // TODO Pick up here! 
 })();

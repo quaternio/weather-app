@@ -30,7 +30,7 @@ class Weather {
     return cleanData;
   }
 
-  async getForecast(place="97370", days=3) {
+  async getForecast({place="97370", days=3} = {}) {
     let data = await fetch(`${this.url}?key=${this.key}&q=${place}&days=${days}`).then((res) => {
       if (!res.ok) {
         throw new Error(`HTTP Error. Status: ${res.status}`);
