@@ -18,13 +18,25 @@ class Forecast {
 }
 
 (async () => {
+
   let fcParams = {
-    place: 97370,
     days: 3
   };
 
-  let weather = new Weather();
-  let forecast = new Forecast(weather.getForecast(fcParams));
+  let form = document.getElementById("search-form");
 
-  // TODO Pick up here! 
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Grab the zip code out of the search bar
+    let zipCode = document.getElementById("search");
+    fcParams.place = +zipCode.value; 
+
+    let weather = new Weather();
+    let weatherData = await weather.getForecast(fcParams);
+    let forecast = new Forecast(weatherData);
+
+    console.log(forecast.data);
+    // TODO Pick up here (render forecast data via populateDay())
+  });
 })();
