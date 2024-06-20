@@ -3,7 +3,7 @@ class Weather {
   constructor() {
     // Bad idea in the real world, don't ever do ever
     this.key = "d1057962e72541a781c161811243005";
-    this.url = "http://api.weatherapi.com/v1/forecast.json"
+    this.url = "https://api.weatherapi.com/v1/forecast.json"
   }
 
   processData(data) {

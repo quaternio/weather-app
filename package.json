@@ -3,11 +3,17 @@
   "version": "0.0.0",
   "description": "An app that displays the 3-day weather forecast",
   "main": "dist/index.bundle.js",
+  "homepage": "https://quaternio.github.io/weather-app/",
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack",
     "devstart": "webpack serve --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quaternio/tudu.git"
   },
   "author": "Thomas Noel <tnoel@novadynamics.com>",
   "license": "ISC",
@@ -17,6 +23,7 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0"
   }
