@@ -1,1 +1,33 @@
 /* Put stuff here */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+#header {
+  font-size: 2rem;
+}
+
+#search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#forecast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.fc-day {
+  align-self: center;
+  justify-self: center;
+}
